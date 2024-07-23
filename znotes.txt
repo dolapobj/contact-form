@@ -1,0 +1,4 @@
+success message 
+
+allow resubmiting a form 
+also error messages should disapear right after re clicking? 

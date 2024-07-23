@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer type="module" src="./script.js"></script>
+</head>
+<body>
+  <main>
+    <div class="success-message" id = 'successMessage'>
+      <div class="h2-wrapper">
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <article class="contact-card">
+      <div class="content-wrapper">
+        <h1>Contact Us</h1>
+        <div class="inputs-wrapper">
+          <div class="name-wrapper">
+            <div class="name-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" required>
+              <div class="error" id="first-name-error"></div>
+            </div>
+  
+            <div class="name-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" required>
+              <div class="error" id="last-name-error"></div>
+            </div>
+          </div>
+  
+          <div class="email-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+            <div class="error" id="email-error"></div>
+          </div>
+
+          <div class="query-type-wrapper">
+            <label class="query-type-label">Query Type</label>
+
+            <div class="radio-group">
+              <label for="general-enquiry">
+                <input type="radio" id = "general-enquiry" name="query-type" required> General Enquiry
+              </label>
+              <label for="support-request">
+                <input type="radio" id = "support-request" name="query-type" required> Support Request
+              </label>
+            </div>
+            <div class="error" id="query-type-error"></div>
+
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>           
+             <div class="error" id="message-error"></div>
+          </div>
+
+          <div class="checkbox-group">
+            <label class="checkbox-container" for="contact-checkbox">
+              <input type="checkbox" id="contact-checkbox"> I hereby consent to being contacted by the team
+            </label>
+            <div class="error" id="checkbox-error"></div>
+
+          </div>
+
+        </div>
+        <button id = "submit-button">Submit</button>
+      </div>
+    </article>
+  </main>
+
+</body>
+</html>
